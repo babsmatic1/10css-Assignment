@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+}
+
+.container{
+    background-color: #eee;
+    margin: 5px;
+}
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item-1 {
+    grid-column: span 3;
+}
+
+.grid-item-2 {
+    background-color: #eee;
+}
+
+.grid-item-3 {
+    background-color: #eee;
+}
+
+.grid-item-4 {
+  grid-row: span 2;
 }
 
 ul{
@@ -27,7 +54,8 @@ nav{
 .logo{
     font-size: 2rem;
     font-weight: 700;
-    color: green;
+    color: rgb(10, 221, 10);
+    cursor: pointer;
 }
 
 .menu > li, .menu > a {
@@ -69,47 +97,75 @@ nav{
 .menu li:hover > .submenu1 {
     display: block;
 }
-.container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #eee;
-}
-.con1,.con2 {
-    margin: 10px;
-    height: 750px;
-    width: 40%;
-    background-color: #eee;
-    overflow: hidden;
+
+.con1, .child2, .con2, .con3, .box1, .box2{
+    background-color: white;
 }
 
-.con3 {
-    margin: 10px;
-    height: 750px;
-    width: 30%;
-    background-color: #fff;
-}
 .child1 {
-    height: 23vh;
-    margin: 10px;
+    margin: 5px;
     background-color: white;
     padding: 10px;
 }
 
-.child2 {
-    background-color: white;
-    height: 80vh;
-    margin: 10px;
+.child1 > input {
+    margin-top: 150px;
+    outline: none;
+    border: none;
 }
 
+.child1 > button {
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border: none;
+    float: right;
+    margin-top: 130px;
+}
+ 
+.child2{
+    background-color: white;
+    height: 620px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.child2 > #con {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+#con2, .con, .con2, .con3, .box1, .box2, .con1, #div, .box1li{
+    border-radius: 10px;
+}
+.child2 >#con2 > #div{
+    border-radius: 30px;
+
+}
+.child2 > #con2{
+    height: 250px;
+}
+.child2 div table tr td img {
+    width: 50px;
+    height: 50px;
+} 
+
+.con3{
+    height: 850px;
+}
 .box1 {
-    height: 75vh;
+    height: 95vh;
     background-color: white;
     margin: 10px;
 }
 
 .box2 {
-    height: 28vh;
+    padding-top: 15px;
+    height: 35vh;
     background-color: white;
     margin: 10px;
 }
@@ -119,35 +175,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     list-style: none;
-
 }
-
-.child1 > input {
-    margin-top: 80px;
-    outline: none;
-    border: none;
-}
-
-.child1 > button {
-    background-color: blue;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    border: none;
-    float: right;
-    margin-top: 80px;
-}
-
-.child2  > #con {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.child2  div table tr td img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-} 
 
 #div {
     width: 300px;
@@ -158,112 +186,127 @@ nav{
     justify-content: center;
 }
 
-.heart{
-    color: red;
-}
-
-#C{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-
-.coda{
-    padding-right: 130px;
-}
-
-.mark{
+#bs1{
+    padding-right: 30px;
+  }
+  
+  .heart{
+      color: red;
+  }
+  
+  #C{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+  }
+  
+  .coda{
+    padding-right: 90px;
+  }
+  
+  .mark{
     padding-left: 10px;
     color: grey;
     cursor: pointer;
+  }
+  
+  .add{
+      background-color: blue;
+      color: white;
+      border: 4px solid blue;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  
+  .txt{
+      color: blue;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  
+  .txt2,.txt4{
+      font-size: 3px;
+  }
+  
+  .txt3{
+      font-size: 5px;
+  }
+  
+  .p1{
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  #add{
+      margin-left: 50px;
+  }
+  
+  .see{
+      padding-right: 70px;
+      background-color: rgb(8, 77, 180);
+      cursor: pointer;
+      width: 100%;
+      color: white;
+      font-size: 18px;
+      padding: 5px;
+      border: 2px solid rgb(8, 77, 180);
+  } 
+  
+  .img4{
+      border-radius: 50%;
+  }
+
+  @media (max-width:768px) {
+    .grid-item-2,.grid-item-3,.grid-item-4,.grid-item-5,.grid-item-6 {
+        grid-column: span 3;
+       }
+
+    .menu{
+     display:none;
+ }
+ 
+ nav img{
+     padding-right: 10px;
+ }
+ 
+ .box1{
+     height: 55vh;
+ }
+ }
+@media (max-width:600px) {
+   .grid-item-2,.grid-item-3,.grid-item-4,.grid-item-5,.grid-item-6 {
+    grid-column: span 3;
+   }
+   .menu{
+    display:none;
 }
 
-.add{
-    background-color: blue;
-    color: white;
-    border: 4px solid blue;
-    border-radius: 10px;
-    cursor: pointer;
+nav img{
+    padding-right: 10px;
 }
 
-.txt{
-    color: blue;
-    font-size: 15px;
-    cursor: pointer;
+.box1{
+    height: 75vh;
+}
 }
 
-.txt2{
-    font-size: 13px;
-}
+/* FOR PHONES */
+@media (max-width:390px) {
+    .grid-item-2,.grid-item-3,.grid-item-4,.grid-item-5,.grid-item-6 {
+        grid-column: span 3;
+       }
 
-.p1{
-  text-align: center;
-  justify-content: center;
-  font-size: 16px;
-}
-
-#add{
-    margin-left: 40px;
-}
-
-.see{
-    padding-right: 70px;
-    background-color: rgb(8, 77, 180);
-    cursor: pointer;
-    width: 100%;
-    color: white;
-    font-size: 18px;
-    padding: 5px;
-    border: 2px solid rgb(8, 77, 180);
-} 
-
-.img4{
-    border-radius: 50%;
-}
-
-@media all and (max-width: 500px) {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .menu{
+     display:none;
+ }
+ 
+ nav img{
+     padding-right: 10px;
+ }
+ 
+ .box1{
+     height: 55vh;
+ }
+ }
