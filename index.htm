@@ -1,263 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Interface</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="img/circle crop.png" type="image/x-icon">
-</head>
-
-<body>
-
+  </head>
   <body>
-    <header>
-      <nav>
-        <h1 class="logo" >CapacityBay</h1>
-        <ul class="menu" >
-          <li><a href="#">Home</a></li>
-          <li class="service"><a href="#">Services</a>
-            <ul class="submenu">
-              <li><a href="#">Python</a></li>
-              <li><a href="#">Fullstack</a></li>
-              <li><a href="#">Linux</a>
-                <ul class="submenu1">
-                  <li><a href="#">Splunk</a></li>
-                  <li><a href="#">Javascript</a></li>
-                  <li><a href="#">Java</a></li>
-                  <li><a href="#">React</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-
-        <img src="img/circle crop.png" width="50" height="50" alt="">
-      </nav>
-    </header>
-    <br /><br />
     <div class="container">
-      <div class="con1">
-        <div class="child1">
-          <h3>what's on your mind</h3>
-          <input type="text" placeholder="write something..." />
-          <button>POST</button>
+      <div class="grid">
+        <div class="grid-item-1 grid-items">
+          <header>
+            <nav>
+              <h1 class="logo">CapacityBay</h1>
+              <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="service">
+                  <a href="#">Services</a>
+                  <ul class="submenu">
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Fullstack</a></li>
+                    <li>
+                      <a href="#">Linux</a>
+                      <ul class="submenu1">
+                        <li><a href="#">Splunk</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">React</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+  
+              <img src="./img/circle crop.png" width="50" height="50" alt="" />
+            </nav>
+          </header>
         </div>
-
-        <div class="child2">
-          <div style="margin: 10px;" id="con">
-            <table>
-              <tr>
-                <td><img src="img/CapacityBay-Logo1.png" alt="" /></td>
-                <td>
-                  <b>CapactityBay</b> <br />
-                  <p>Web Developer</p>
-                </td>
-              </tr>
-            </table>
-            <div style="margin: 20px;">Mar 15, 2002</div>
-          </div>
-
-
-          <div id="con2">
-            <p>Hello World</p>
-            <p>Happy new Month from capacityBay</p>
-
-            <center>
-              <div id="div">
-                <img src="img/1641853800065.jpeg" width="250px" id="img" height="200px" alt="">
-                <a href="https://www.capacitybay.org">capacitybay.org</a> <br>
-                <b class="txt2">Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Cupiditate reiciendis corrupti officiis
-                  beatae aspernatur magni ab labore, mollitia ipsa harum
-                  nobis omnis porro magnam quibusdam exercitationem optio.</b>
+        <div class="grid-item-2 grid-items">
+          <div class="con1">
+              <div class="child1">
+                <p>what's on your mind</p>
+                <input type="text" placeholder="write something..." />
+                <button>POST</button>
               </div>
-            </center>
+        </div>
+  
+        <div class="grid-item-3 grid-items">
+          <div class="child2">
+              <div id="con">
+                <ul id="C">
+                  <li>
+                    <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">CapacityBay
+                    </b><br> Web Developer</p>
+                  </li>
+      
+                  <li>November 5, 2022</li><br>
+                </ul><br>
+              </div>
+    
+    
+              <div id="con2">
+                <p>Hello World</p>
+                <p>Happy new Month from capacityBay</p>
+    
+                <center>
+                  <div id="div">
+                    <img src="img/1641853800065.jpeg" width="250px" id="img" height="200px" alt="">
+                    <a href="https://www.capacitybay.org">capacitybay.org</a> <br>
+                    <p class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto quia, assumenda ab dolores eaque cumque omnis odio facilis facere rem iusto itaque! In iure ratione alias nisi excepturi eos!</p>
+                  </div>
+                </center>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="con2">
-        <div class="box1">
-          <ul id="C">
-            <li>
-              <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Pixel Solution LLC
-              </b><br> Freebies</p>
-            </li>
-
-            <li>November 5, 2022</li><br>
-          </ul>
-
-          <p class="txt">https://drive.google.com/drive/u/0/mobile/folders/1-i5QHFNrC33lHwvVvyQ-90CkFrlUs-hG?usp=sharing
-          </p>
-
-          <center>
-            <div id="div">
-              <img src="img/dee frosh.png" width="250px" id="img" height="200px" alt="">
-              <a href="https://www.capacitybay.org">capacitybay.org</a> <br>
-              <b class="txt2">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cupiditate reiciendis corrupti officiis
-                beatae aspernatur magni ab labore, mollitia ipsa harum
-                nobis omnis porro magnam quibusdam exercitationem optio.</b>
+        
+        <div class="grid-item-4 grid-items">
+          <div class="con2">
+              <div class="box1">
+                <ul id="C">
+                  <li>
+                    <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="b s1" class="coda">Pixel Solution
+                    </b><br> Freebies</p>
+                  </li>
+      
+                  <li>November 5, 2022</li><br>
+                </ul><br>
+      
+                <a href="https://drive.google.com/drive/u/0/mobile/folders/1-i5QHFNrC33lHwvVvyQ-90CkFrlUs-hG?usp=sharing" class="txt">https://drive.google.com/drive/uVvyQ-90CkFrlUs-hG?usp=sharing
+                </a>
+      
+                <center>
+                  <div id="div">
+                    <img src="img/dee frosh.png" width="250px" id="img" height="200px" alt="">
+                    <a href="https://www.capacitybay.org">capacitybay.org</a>
+                    <p class="txt3">Lorem ipsum dolor sit amet consecte
+                      adipisicing elit. Cupiditate reiciendis corrupti officiis
+                      beataeo.</p>
+                  </div>
+                </center>
+      
+                <ul class="box1li">
+                  <li><i class="fas fa-heart"></i></li>
+                  <li><i class="fas fa-comment-dots"></i></li>
+                  <li><i class="fas fa-share-nodes"></i></li>
+                  <li>
+                    <p class="txt">Add a Comment</p>
+                  </li>
+                </ul>
+      
+              </div>
+        </div>
+        <div class="grid-item-5 grid-items">
+          <div class="box2">
+  
+              <ul id="C">
+                <li>
+                  <img src="img/slack_hash_256-removebg-preview.png" width="50" height="50" alt="">
+                </li>
+    
+                <li>
+                  <b>
+                    <p id="bs1" class="coda">Dorothy Barlett
+                  </b><br> Graphics Designer</p>
+                </li>
+    
+                <li>November 4, 2022</li><br>
+              </ul>
+    
+              <p class="txt3">It Really Nice doing this amazing projects, i found it amazing in the first sight but on getting
+                to know how to solve it, it's looks hard but here am i finishing it. Thanks to capacityBay.</p><br>
+    
+              <ul class="box1li">
+                <li><i class="fas fa-heart heart"></i></li>
+                <li><i class="fas fa-comment-dots"></i></li>
+                <li><i class="fas fa-share-nodes"></i></li>
+                <li>
+                  <p class="txt">Add a Comment</p>
+                </li>
+              </ul>
+    
             </div>
-          </center>
-
-          <ul class="box1li">
-            <li><i class="fas fa-heart"></i></li>
-            <li><i class="fas fa-comment-dots"></i></li>
-            <li><i class="fas fa-share-nodes"></i></li>
-            <li>
-              <p class="txt">Add a Comment</p>
-            </li>
-          </ul>
-
+          </div>
         </div>
-        <div class="box2">
-
-          <ul id="C">
-            <li>
-              <img src="img/slack_hash_256-removebg-preview.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Dorothy Barlett
-              </b><br> Graphics Designer</p>
-            </li>
-
-            <li>November 4, 2022</li><br>
-          </ul>
-
-          <b><p class="p1">It Really Nice doing this amazing projects, i found it amazing in the first sight but on getting
-            to know how to solve it, it's looks hard but here am i finishing it. Thanks to capacityBay.</p></b> <br>
-
-          <ul class="box1li">
-            <li><i class="fas fa-heart heart"></i></li>
-            <li><i class="fas fa-comment-dots"></i></li>
-            <li><i class="fas fa-share-nodes"></i></li>
-            <li>
-              <p class="txt">Add a Comment</p>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <div class="con3">
-        <div class="C S1">
-          <p class="txt">Suggestions</p><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">CapacityBay
-              </b><br> Developer Website</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button> <br><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/slack_hash_256-removebg-preview.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Slack
-              </b><br>Dev Workplace</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button><br><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/circle crop.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Pixelstain.net
-              </b> <br> Website</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button><br><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/1641853800065.jpeg" class="img4" width="40" height="40" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Faculty Roland
-              </b> <br> Website Developer</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button><br><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Faculty Oderra
-              </b> <br> Tutor</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button><br><br>
-
-          <ul id="C">
-            <li>
-              <img src="img/circle crop.png" width="50" height="50" alt="">
-            </li>
-
-            <li>
-              <b>
-                <p id="bs1" class="coda">Faculty Emmanuel
-              </b><br> Coach</p>
-            </li>
-
-            <li><i class="fas fa-circle-xmark mark"></i></li><br>
-          </ul>
-
-          <button class="add" id="add">Add</button><br><br><br>
-
-          <button class="see">See More</button>
+        <div class="grid-item-6 grid-items">
+          <div class="con3">
+              <div class="C S1">
+                <p class="txt">Suggestions</p><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">CapacityBay
+                    </b><br> Developer Website</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button> <br><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/slack_hash_256-removebg-preview.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">Slack
+                    </b><br>Dev Workplace</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button><br><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/circle crop.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">Pixelstain.net
+                    </b> <br> Website</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button><br><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/1641853800065.jpeg" class="img4" width="40" height="40" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">Faculty Roland
+                    </b> <br> Website Developer</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button><br><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/CapacityBay-Logo1.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">Faculty Oderra
+                    </b> <br> Tutor</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button><br><br>
+      
+                <ul id="C">
+                  <li>
+                    <img src="img/circle crop.png" width="50" height="50" alt="">
+                  </li>
+      
+                  <li>
+                    <b>
+                      <p id="bs1" class="coda">Faculty Emmanuel
+                    </b><br> Coach</p>
+                  </li>
+      
+                  <li><i class="fas fa-circle-xmark mark"></i></li><br>
+                </ul>
+      
+                <button class="add" id="add">Add</button><br><br><br>
+      
+                <button class="see">See More</button>
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </body>
-
 </html>
