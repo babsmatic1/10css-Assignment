@@ -155,7 +155,7 @@ nav{
 } 
 
 .con3{
-    height: 850px;
+    height: 80px;
 }
 .box1 {
     height: 95vh;
@@ -290,6 +290,7 @@ nav img{
 .box1{
     height: 75vh;
 }
+
 }
 
 /* FOR PHONES */
@@ -307,6 +308,7 @@ nav img{
  }
  
  .box1{
-     height: 55vh;
+     height: 75vh;
  }
+
  }
